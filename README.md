@@ -2,6 +2,9 @@
 
 A Spring Boot application that fetches and parses RSS feeds. This API allows clients to retrieve structured data from any valid RSS feed URL.
 
+## Status
+Current scaling is set to 0. Need to enable (set to 1) through flyctl to revive app.
+
 ## Features
 
 - **RSS Feed Parsing**: Convert any RSS feed URL into structured JSON data
