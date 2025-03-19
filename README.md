@@ -29,6 +29,5 @@ Returns a JSON array of episodes from the specified RSS feed.
     "description": "He’s here to talk about one of the most important topics we’ve ever covered and to help me make an exciting announcement.",
     "pubDate": "Mon, 27 May 2024 15:30:00 -0000",
     "guid": "zPw9Ut2OHwL6Olj3xF9RZht2MPAPJz_TYYVeRuM4r8"
-  },
-  ...
+  }
 ]
