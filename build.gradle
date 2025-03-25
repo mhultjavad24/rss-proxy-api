@@ -23,9 +23,15 @@ dependencies {
 	implementation 'com.rometools:rome:2.1.0'
 	implementation 'com.rometools:rome-utils:2.1.0'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	testImplementation 'org.mockito:mockito-inline:5.2.0'
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 }
 
 tasks.named('test') {
 	useJUnitPlatform()
+	
+	// Configure JVM arguments for testing to enable dynamic agent loading
+	jvmArgs += [
+		'-XX:+EnableDynamicAgentLoading'
+	]
 }
