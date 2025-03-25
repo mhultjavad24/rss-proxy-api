@@ -2,7 +2,6 @@ package io.github.mhultjavad24.rss_proxy_api.controller;
 
 import io.github.mhultjavad24.rss_proxy_api.model.Episode;
 import io.github.mhultjavad24.rss_proxy_api.service.RssService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -17,7 +16,6 @@ public class RssController {
 
     private final RssService rssService;
 
-    @Autowired
     public RssController(RssService rssService) {
         this.rssService = rssService;
     }
